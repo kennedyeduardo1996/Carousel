@@ -3,23 +3,13 @@ $(document).ready(function () {
     var owl = $("#owl-demo");
 
     owl.owlCarousel({
-
-
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
         autoPlay: true,
-        autoPlay: 3000,
-        transitionStyle : "fade"
+        autoPlay: 3000
 
 
-
-        // "singleItem:true" is a shortcut for:
-        // items : 1,
-        // itemsDesktop : false,
-        // itemsDesktopSmall : false,
-        // itemsTablet: false,
-        // itemsMobile : false
     });
 
     $(".next").click(function () {
@@ -29,6 +19,15 @@ $(document).ready(function () {
         owl.trigger('owl.next');
     });
 
+
+
+
+
+        $("#owl-demo2").owlCarousel({
+            singleItem: false,
+            items : 3,
+            navigation : true
+        });
 
 
 });
