@@ -13,32 +13,141 @@
     <link rel="stylesheet" href="owlcarousel2/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel2/owl.theme.default.min.css">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        #owl-demo2{
-            position: relative;
+
+        .container {
+            width: 80%;
+            margin: auto;
         }
-        .owl-dots{
+
+        #owl-demo2 {
+            position: relative;
+            margin-top: 100px;
+        }
+
+        .owl-dots {
             position: absolute;
             bottom: 30px;
         }
-        </style>
+
+
+        /***********************************************/
+        body{
+            overflow-x: hidden;
+        }
+        #menuLateral{
+            transform: translate(-100%, 0 );
+            background-color: #FFDC00;
+            width: 88%;
+            position: fixed;
+            height: 100%;
+            transition: 2s all;
+        }
+        .conteudo{
+            position: absolute;
+            background-color: #3498db;
+            width: 100%;
+            top: 0;
+            transition: 2s all;
+
+
+        }
+        header {
+            background-color: blue;
+        }
+
+        #menu ul {
+            display: flex;
+            list-style: none;
+        }
+
+        #menu ul li {
+            flex: 1;
+            background-color: #9A12B3;
+            padding: 10px 0;
+            margin: 2px;
+            text-align: center;
+        }
+
+        #menu ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .botMenu{
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            #menu ul {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
 </head>
 <body>
+<div id="menuLateral"></div>
+<div class="conteudo">
+    <header>
+        <div class="container">
+            <div class="botMenu">&#9776;</div>
+            <div id="menuCentral">
+                <img src="logo.jpg" alt="logo">
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#">wnnijwjn</a></li>
+                        <li><a href="#">wnnijwjn</a></li>
+                        <li><a href="#">wnnijwjn</a></li>
+                        <li><a href="#">wnnijwjn</a></li>
+                        <li><a href="#">wnnijwjn</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-<div id="owl-demo2" class="owl-carousel owl-theme">
-    <div><img src="fullimage1.jpg" alt="The Last of us"></div>
-    <div><img src="fullimage2.jpg" alt="GTA V"></div>
-    <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
-    <div><img src="fullimage1.jpg" alt="The Last of us"></div>
-    <div><img src="fullimage2.jpg" alt="GTA V"></div>
-    <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
-    <div><img src="fullimage1.jpg" alt="The Last of us"></div>
-    <div><img src="fullimage2.jpg" alt="GTA V"></div>
-    <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
+
+    <div class="container">
+        <div id="owl-seta" class="owl-carousel owl-theme">
+            <div><img src="fullimage1.jpg" alt="The Last of us"></div>
+            <div><img src="fullimage2.jpg" alt="GTA V"></div>
+            <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
+            <div><img src="fullimage1.jpg" alt="The Last of us"></div>
+            <div><img src="fullimage2.jpg" alt="GTA V"></div>
+            <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
+            <div><img src="fullimage1.jpg" alt="The Last of us"></div>
+            <div><img src="fullimage2.jpg" alt="GTA V"></div>
+            <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
+        </div>
+    </div>
+
+
+    <!--**********************************************************************-->
+
+    <div class="container">
+        <div id="owl-demo2" class="owl-carousel owl-theme">
+            <div><img src="fullimage1.jpg" alt="The Last of us"></div>
+            <div><img src="fullimage2.jpg" alt="GTA V"></div>
+            <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
+            <div><img src="fullimage1.jpg" alt="The Last of us"></div>
+            <div><img src="fullimage2.jpg" alt="GTA V"></div>
+            <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
+            <div><img src="fullimage1.jpg" alt="The Last of us"></div>
+            <div><img src="fullimage2.jpg" alt="GTA V"></div>
+            <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
+        </div>
+    </div>
 </div>
+
 
 <script src="jquery-3.3.1.js"></script>
 <script src="owlcarousel2/owl.carousel.min.js"></script>
