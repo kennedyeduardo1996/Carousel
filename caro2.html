@@ -92,6 +92,29 @@
 
         }
 
+
+
+
+
+
+
+        /*3D*/
+        .item{
+            opacity:0.7;
+            transition:.4s ease all;
+            transform:scale(.8);
+        }
+        .active .item{
+            opacity:1;
+            transform:scale(1);
+        }
+
+
+
+        #MyCarousel3D{
+            position: relative;
+        }
+
     </style>
 </head>
 <body>
@@ -116,19 +139,20 @@
     </header>
 
 
-    <div class="container">
         <div id="owl-seta" class="owl-carousel owl-theme">
-            <div><img src="fullimage1.jpg" alt="The Last of us"></div>
-            <div><img src="fullimage2.jpg" alt="GTA V"></div>
-            <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
-            <div><img src="fullimage1.jpg" alt="The Last of us"></div>
-            <div><img src="fullimage2.jpg" alt="GTA V"></div>
-            <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
-            <div><img src="fullimage1.jpg" alt="The Last of us"></div>
-            <div><img src="fullimage2.jpg" alt="GTA V"></div>
-            <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
+            <div class="item"><img src="fullimage1.jpg" alt="The Last of us"></div>
+            <div class="item"><img src="fullimage2.jpg" alt="GTA V"></div>
+            <div class="item"><img src="fullimage3.jpg" alt="Mirror Edge"></div>
+            <div class="item"><img src="fullimage1.jpg" alt="The Last of us"></div>
+            <div class="item"><img src="fullimage2.jpg" alt="GTA V"></div>
+            <div class="item"><img src="fullimage3.jpg" alt="Mirror Edge"></div>
+            <div class="item"><img src="fullimage1.jpg" alt="The Last of us"></div>
+            <div class="item"><img src="fullimage2.jpg" alt="GTA V"></div>
+            <div class="item"><img src="fullimage3.jpg" alt="Mirror Edge"></div>
         </div>
-    </div>
+        <button class="next"> proximo</button>
+        <button class="prev"> anterior</button>
+
 
 
     <!--**********************************************************************-->
@@ -147,6 +171,50 @@
         </div>
     </div>
 </div>
+
+
+<!--<div id="MyCarousel3D">-->
+    <!--<div class="owl-carousel caro3d">-->
+        <!--<div class="item">-->
+            <!--<a href="#">-->
+                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />-->
+
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="item">-->
+            <!--<a href="#">-->
+                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />-->
+
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="item">-->
+            <!--<a href="#">-->
+                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />-->
+
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="item">-->
+            <!--<a href="#">-->
+                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />-->
+
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="item">-->
+            <!--<a href="#">-->
+                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_bags.jpg" alt="" />-->
+
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="item black">-->
+            <!--<a href="#">-->
+                <!--<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/slider_book_cover.jpg" alt="" />-->
+
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</div>-->
+
 
 
 <script src="jquery-3.3.1.js"></script>
