@@ -110,7 +110,6 @@
         }
 
 
-
         #MyCarousel3D{
             position: relative;
         }
@@ -170,6 +169,52 @@
             <div><img src="fullimage3.jpg" alt="Mirror Edge"></div>
         </div>
     </div>
+    <style>
+
+        #efeitoImg {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        #efeitoImg img{
+                position: absolute;
+                width: 300px;
+                height: 200px;
+        }
+
+        #efeitoImg .img1 img {
+            clip-path: circle(100% at 150px 100px);
+            opacity: 1;
+            transition: 2s all;
+
+        }
+        #efeitoImg:hover .img1 img {
+            clip-path: circle(0% at 150px 100px);
+            opacity: 0;
+            transition: 2s all;
+
+        }
+
+        #efeitoImg .img2 img {
+               opacity: 0;
+               clip-path: circle(0% at 150px 100px);
+            transition: 2s all;
+
+        }
+        #efeitoImg:hover .img2 img{
+            opacity: 1;
+            clip-path: circle(100% at 150px 100px);
+            transition: 2s all;
+        }
+
+
+
+    </style>
+<div id="efeitoImg">
+    <div class="img1 img"><img src="fullimage1.jpg" alt="The Last of us"></div>
+    <div class="img2 img"><img src="fullimage2.jpg" alt="GTA V"></div>
+</div>
 </div>
 
 
