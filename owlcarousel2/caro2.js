@@ -25,10 +25,22 @@
 
         // carousel
         $("#owl-demo2").owlCarousel({
+            // animateIn:'rollln',
+            // animateOut:'rollln',
             center: true,
-            items:1,
+            nav:true,
+            // slideTransition:'zoomIn',
+            mouseDrag:false,
+            items:3,
             loop:true,
+            margin: 10,
+            smartSpeed:650
+
         });
+
+
+
+
         var owlSeta = $("#owl-seta").owlCarousel({
             stagePadding: 135,
             loop:true,
@@ -41,6 +53,8 @@
 
         $('button.next').click(function() {
             owlSeta.trigger('next.owl.carousel');
+            slideTransition:'bounceOut';
+
         })
 
         $('button.prev').click(function() {
